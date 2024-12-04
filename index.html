@@ -22,13 +22,19 @@
             width: 100%;
             height: 100%;
             background-image: url('./images/Sound Of Denim.jpg');
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
     
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: end;
+        }
+
+        @media (width < 500px) {
+            main {
+                background-size: contain;
+            }
         }
 
         .container {
