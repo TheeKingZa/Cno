@@ -1,0 +1,220 @@
+{
+    "profile": {
+        "name": "TurnMeUpCno",
+        "bio": "Specializing in Dark Trap and Cinematic Drill.",
+        "tagline": "Dark Trap & Cinematic Drill",
+        "email": "contact@turnmeupcno.com",
+        "location": "Los Angeles, CA",
+        "responseTime": "Usually responds within 24 hours",
+        "socials": {
+            "instagram": "https://instagram.com/turnmeupcno",
+            "twitter": "",
+            "youtube": "https://youtube.com/turnmeupcno",
+            "beatstars": "#",
+            "soundcloud": ""
+        }
+    },
+    "instrumentals": [
+        {
+            "id": 1,
+            "title": "Midnight Rain",
+            "price": "R29.99",
+            "bpm": 140,
+            "key": "F# Minor",
+            "genre": "Dark Trap",
+            "imageUrl": "./images/Cno/cno_logo_w.png",
+            "audioUrl": "./previews/song1.mp3",
+            "link": "#",
+            "tags": ["dark", "atmospheric", "hard"],
+            "featured": true,
+            "createdAt": "2024-01-15"
+        },
+        {
+            "id": 2,
+            "title": "Shadow Walker",
+            "price": "R34.99",
+            "bpm": 145,
+            "key": "D Minor",
+            "genre": "Cinematic Drill",
+            "imageUrl": "./images/Cno/cno_logo_w.png",
+            "audioUrl": "./previews/song1.mp3",
+            "link": "#/shadow-walker",
+            "tags": ["drill", "cinematic", "orchestral"],
+            "featured": true,
+            "createdAt": "2024-01-10"
+        },
+        {
+            "id": 3,
+            "title": "Ghost Protocol",
+            "price": "R29.99",
+            "bpm": 138,
+            "key": "G Minor",
+            "genre": "Dark Trap",
+            "imageUrl": "./images/Cno/cno_logo_w.png",
+            "audioUrl": "./previews/song1.mp3",
+            "link": "#/ghost-protocol",
+            "tags": ["dark", "aggressive", "808"],
+            "featured": false,
+            "createdAt": "2024-01-05"
+        },
+        {
+            "id": 4,
+            "title": "Night Vision",
+            "price": "R39.99",
+            "bpm": 142,
+            "key": "A Minor",
+            "genre": "Cinematic Drill",
+            "imageUrl": "./images/Cno/cno_logo_w.png",
+            "audioUrl": "./previews/song1.mp3",
+            "link": "#/night-vision",
+            "tags": ["cinematic", "epic", "strings"],
+            "featured": true,
+            "createdAt": "2024-01-01"
+        },
+        {
+            "id": 5,
+            "title": "Phantom",
+            "price": "R24.99",
+            "bpm": 135,
+            "key": "E Minor",
+            "genre": "Dark Trap",
+            "imageUrl": "./images/Cno/cno_logo_w.png",
+            "audioUrl": "./previews/song1.mp3",
+            "link": "#/phantom",
+            "tags": ["dark", "minimal", "bouncy"],
+            "featured": false,
+            "createdAt": "2023-12-28"
+        },
+        {
+            "id": 6,
+            "title": "Cold Blood",
+            "price": "R34.99",
+            "bpm": 148,
+            "key": "C Minor",
+            "genre": "UK Drill",
+            "imageUrl": "./images/Cno/cno_logo_w.png",
+            "audioUrl": "./previews/song1.mp3",
+            "link": "#/cold-blood",
+            "tags": ["uk drill", "sliding 808", "dark"],
+            "featured": false,
+            "createdAt": "2023-12-20"
+        },
+        {
+            "id": 7,
+            "title": "Eclipse",
+            "price": "R44.99",
+            "bpm": 140,
+            "key": "B Minor",
+            "genre": "Cinematic Drill",
+            "imageUrl": "./images/Cno/cno_logo_w.png",
+            "audioUrl": "./previews/song1.mp3",
+            "link": "#/eclipse",
+            "tags": ["cinematic", "piano", "emotional"],
+            "featured": true,
+            "createdAt": "2023-12-15"
+        },
+        {
+            "id": 8,
+            "title": "Underworld",
+            "price": "R29.99",
+            "bpm": 136,
+            "key": "F Minor",
+            "genre": "Dark Trap",
+            "imageUrl": "./images/Cno/cno_logo_w.png",
+            "audioUrl": "./previews/song1.mp3",
+            "link": "#/underworld",
+            "tags": ["dark", "heavy", "bass"],
+            "featured": false,
+            "createdAt": "2023-12-10"
+        }
+    ],
+    "services": [
+        {
+            "id": 1,
+            "name": "Beat Licensing",
+            "description": "License any beat from the catalog with clear, simple terms",
+            "icon": "shopping-cart"
+        },
+        {
+            "id": 2,
+            "name": "Custom Beats",
+            "description": "Get a unique instrumental tailored to your vision",
+            "icon": "magic"
+        },
+        {
+            "id": 3,
+            "name": "Collaboration",
+            "description": "Open to working with artists and other producers",
+            "icon": "users"
+        },
+        {
+            "id": 4,
+            "name": "Exclusive Rights",
+            "description": "Full ownership available for serious projects",
+            "icon": "lock"
+        }
+    ],
+    "genres": [
+        "Dark Trap",
+        "Cinematic Drill",
+        "UK Drill",
+        "Hard Trap",
+        "Atmospheric",
+        "Orchestral"
+    ],
+    "features": [
+        {
+            "id": 1,
+            "title": "Instant Delivery",
+            "description": "Download your beats immediately after purchase",
+            "icon": "bolt"
+        },
+        {
+            "id": 2,
+            "title": "Clear Licensing",
+            "description": "Simple terms for all usage types",
+            "icon": "file-contract"
+        },
+        {
+            "id": 3,
+            "title": "Direct Support",
+            "description": "Get help whenever you need it",
+            "icon": "headset"
+        }
+    ],
+    "licensing": {
+        "basic": {
+            "name": "Basic License",
+            "price": "R29.99",
+            "features": [
+                "MP3 File",
+                "Up to 10,000 streams",
+                "Non-exclusive rights",
+                "Must credit producer"
+            ]
+        },
+        "premium": {
+            "name": "Premium License",
+            "price": "R49.99",
+            "features": [
+                "MP3 + WAV Files",
+                "Up to 100,000 streams",
+                "Non-exclusive rights",
+                "Must credit producer",
+                "1 music video"
+            ]
+        },
+        "exclusive": {
+            "name": "Exclusive License",
+            "price": "Contact for pricing",
+            "features": [
+                "All file formats (MP3, WAV, Stems)",
+                "Unlimited streams",
+                "Full exclusive rights",
+                "No credit required",
+                "Unlimited music videos",
+                "Beat removed from store"
+            ]
+        }
+    }
+}

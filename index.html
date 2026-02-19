@@ -3,124 +3,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="./images/Cno/cno_logo.png" type="image/x-icon">
-    <title>Cno - SoundCloud Embed</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            height: 100vh;
-        }
-
-        main {
-            margin: 20px;
-            padding: 20px;            
-            width: 100%;
-            height: 100%;
-            background-image: url('./images/Sound Of Denim.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
+    <meta name="description" content="TurnMeUpCno - Specializing in Dark Trap and Cinematic Drill beats. Browse and license premium instrumentals.">
+    <meta name="keywords" content="TurnMeUpCno, dark trap, cinematic drill, beats, instrumentals, producer">
+    <meta name="author" content="TurnMeUpCno">
     
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: end;
-        }
-
-        @media (width < 500px) {
-            main {
-                background-size: contain;
-                background-position: center;
-                object-fit: fill;
-            }
-        }
-
-        .container {
-
-         
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .iframe-container {
-            margin-bottom: 10px;
-        }
-        .credits {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-size: 12px;
-            color: #666;
-        }
-        .credits a {
-            padding: 2.5px;
-            background-color: #342c76;
-            color: white;
-            text-decoration: none;
-        }
-        .credits a:hover {
-            background-color: #342c76;
-            color: rgb(255, 98, 0);
-            font-weight: bold;
-        }
-
-        section {
-            margin-top: 0 20vh 0 20vh;
-            padding: 20px;
-        }
-        .s-aboutme {
-            background-color: white;
-        }
-
-    </style>
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="TurnMeUpCno - Dark Trap & Cinematic Drill Producer">
+    <meta property="og:description" content="Specializing in Dark Trap and Cinematic Drill. Browse and license premium beats.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://audioghost.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>TurnMeUpCno | Dark Trap & Cinematic Drill Producer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/Cno/cno_logo.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="root.css">
 </head>
 <body>
-    <main>
-        <section class="s-aboutme">
-            <h1>
-                About Me
-            </h1>
-    
-            <p>
-                I am a passionate music artist dedicated to creating unique and captivating sounds. With a deep love for music and a commitment to excellence, I strive to push the boundaries of creativity and deliver unforgettable experiences to my audience.
-            </p>
-        </section>
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-        <div>
-            Date: 04 December 2024
-        </div>
-        <div class="container">
-            <div class="iframe-container">
-                <iframe width="100%" height="266" scrolling="no" frameborder="no" allow="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1973199507&color=%23342c76&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=true&show_teaser=true"></iframe>
+    <!-- Ambient Background -->
+    <div class="ambient-background">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <nav class="main-nav">
+            <a href="/" class="logo">
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#beats">Beats</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero / Profile Section -->
+    <section id="profile-section" class="hero">
+        <div class="hero-content">
+            <div class="profile-image-wrapper">
+                <div class="profile-image">
+                    <img src="./images/Cno/Cno.jpg" alt="TurnMeUpCno profile photo" id="profile-img" loading="lazy">
+                </div>
+                <div class="profile-glow"></div>
             </div>
-            <div class="credits">
-                <a href="https://soundcloud.com/turnmeupcno-2-0" title="TurnMEupCno 2.0" target="_blank">TurnMEupCno 2.0</a> · 
-                <a href="https://soundcloud.com/turnmeupcno-2-0/denim-project" title="Denim Project" target="_blank">Denim Project</a>
+            
+            <div class="producer-badge">
+                <span><i class="fas fa-check-circle"></i> Verified Producer</span>
+            </div>
+            
+            <h1 id="producer-name" class="producer-name"></h1>
+            <p id="producer-tagline" class="tagline"></p>
+            <p id="producer-bio" class="bio">Specializing in HIP HOP and Cinematic Drill.</p>
+
+
+            
+            <!-- Social Links -->
+            <nav id="social-links" class="social-links" aria-label="Social media links">
+                <!-- Populated by JS based on available socials -->
+            </nav>
+            
+            <!-- Call to Action -->
+            <div class="cta-buttons">
+                <a href="#beats" class="btn btn-primary">
+                    <i class="fas fa-headphones"></i>
+                    Browse Beats
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Get in Touch
+                </a>
+            </div>
+            
+            <!-- Stats -->
+            <div class="producer-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="beat-count">10</span>
+                    <span class="stat-label">Beats</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Available</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Original</span>
+                </div>
             </div>
         </div>
-
-    </main>
-    <section>
-        <h1>
-            Follow My Journey
-        </h1>
-        <p>
-            Stay tuned for upcoming releases, live performances, and behind-the-scenes content. Thank you for your support!
-
-        </p>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </section>
 
-    <footer>
-        <p>
-            &copy; 2024 TurnMEupCno 2.0. All rights reserved.
-        </p>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Beats/Instrumentals Section -->
+        <section id="beats" class="beats-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon"><i class="fas fa-fire"></i></span>
+                        Instrumentals
+                    </h2>
+                    <p class="section-subtitle">Premium beats ready for your next project</p>
+                </div>
+                
+                <!-- Filter/Sort Controls -->
+                <div class="beats-controls">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-input" placeholder="Search beats..." aria-label="Search beats">
+                    </div>
+                    <div class="filter-group">
+                        <select id="sort-select" class="filter-select" aria-label="Sort beats">
+                            <option value="newest">Newest First</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="title">A-Z</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Instrumentals Grid -->
+                <div id="instrumentals-grid" class="instrumentals-grid">
+                    <!-- Loading State -->
+                    <div class="loading-state" id="loading-state">
+                        <div class="loading-spinner">
+                            <span class="spinner"></span>
+                        </div>
+                        <p>Loading beats...</p>
+                    </div>
+                </div>
+                
+                <!-- Empty State -->
+                <div class="empty-state" id="empty-state" hidden>
+                    <i class="fas fa-music"></i>
+                    <h3>No beats found</h3>
+                    <p>Try adjusting your search or filters</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon"><i class="fas fa-user-astronaut"></i></span>
+                        About
+                    </h2>
+                    <p class="section-subtitle">The story behind the sound</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="about-text">
+                            <p>
+                                <strong>TurnMeUpCno</strong> is a music producer specializing in <em>Dark Trap</em> and 
+                                <em>Cinematic Drill</em> production. Creating atmospheric, hard-hitting beats with 
+                                haunting melodies and powerful 808s.
+                            </p>
+                            <p>
+                                Every instrumental is crafted with attention to detail, ensuring professional 
+                                quality that stands out in today's competitive music industry.
+                            </p>
+                        </div>
+                        
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Instant Delivery</h4>
+                                    <p>Download your beats immediately after purchase</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-file-contract"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Clear Licensing</h4>
+                                    <p>Simple terms for all usage types</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Direct Support</h4>
+                                    <p>Get help whenever you need it</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Genres -->
+                    <div class="genres-card">
+                        <h3><i class="fas fa-tags"></i> Genres & Styles</h3>
+                        <div class="genre-tags">
+                            <span class="genre-tag">Dark Trap</span>
+                            <span class="genre-tag">Cinematic Drill</span>
+                            <span class="genre-tag">UK Drill</span>
+                            <span class="genre-tag">Hard Trap</span>
+                            <span class="genre-tag">Atmospheric</span>
+                            <span class="genre-tag">Orchestral</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon"><i class="fas fa-paper-plane"></i></span>
+                        Contact
+                    </h2>
+                    <p class="section-subtitle">Let's create something together</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Info Card -->
+                    <div class="contact-card">
+                        <h3>Get in Touch</h3>
+                        <p class="contact-intro">
+                            Interested in licensing a beat, custom production, or collaboration? 
+                            Reach out through any of the channels below.
+                        </p>
+                        
+                        <div class="contact-items">
+                            <a href="mailto:contact@audioghost.com" class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">contact@audioghost.com</span>
+                                </div>
+                                <i class="fas fa-arrow-right contact-arrow"></i>
+                            </a>
+                            
+                            <a href="https://instagram.com/yourlink" target="_blank" rel="noopener noreferrer" class="contact-item">
+                                <div class="contact-icon instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <span class="contact-label">Instagram</span>
+                                    <span class="contact-value">@audioghost</span>
+                                </div>
+                                <i class="fas fa-arrow-right contact-arrow"></i>
+                            </a>
+                            
+                            <a href="https://youtube.com/yourlink" target="_blank" rel="noopener noreferrer" class="contact-item">
+                                <div class="contact-icon youtube">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <span class="contact-label">YouTube</span>
+                                    <span class="contact-value">TurnMeUpCno</span>
+                                </div>
+                                <i class="fas fa-arrow-right contact-arrow"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="response-time">
+                            <i class="fas fa-clock"></i>
+                            <span>Usually responds within 24 hours</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Services Card -->
+                    <div class="services-card">
+                        <h3>Services</h3>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Beat Licensing</h4>
+                                <p>License any beat from the catalog with clear, simple terms</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Custom Beats</h4>
+                                <p>Get a unique instrumental tailored to your vision</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Collaboration</h4>
+                                <p>Open to working with artists and other producers</p>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Exclusive Rights</h4>
+                                <p>Full ownership available for serious projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <i class="fas fa-ghost"></i>
+                        <span>TurnMeUpCno</span>
+                    </a>
+                    <p>Specializing in Dark Trap and Cinematic Drill.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#beats">Beats</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="/licensing">Licensing Info</a></li>
+                            <li><a href="/terms">Terms of Use</a></li>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-social" id="footer-social">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> TurnMeUpCno. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Audio Player (Fixed) -->
+    <div id="audio-player" class="audio-player" hidden>
+        <div class="player-content">
+            <div class="now-playing">
+                <img src="" alt="" id="player-artwork" class="player-artwork">
+                <div class="track-info">
+                    <span id="player-title" class="track-title">No track selected</span>
+                    <span id="player-price" class="track-price"></span>
+                </div>
+            </div>
+            
+            <div class="player-center">
+                <div class="player-controls">
+                    <button id="prev-btn" class="player-btn" aria-label="Previous track">
+                        <i class="fas fa-step-backward"></i>
+                    </button>
+                    <button id="play-pause-btn" class="player-btn play-btn" aria-label="Play">
+                        <i class="fas fa-play" id="play-icon"></i>
+                    </button>
+                    <button id="next-btn" class="player-btn" aria-label="Next track">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                </div>
+                
+                <div class="progress-container">
+                    <span id="current-time" class="time-display">0:00</span>
+                    <div class="progress-bar-wrapper">
+                        <input type="range" id="progress-bar" class="progress-bar" value="0" min="0" max="100" aria-label="Seek">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <span id="duration" class="time-display">0:00</span>
+                </div>
+            </div>
+            
+            <div class="player-right">
+                <div class="volume-container">
+                    <button id="mute-btn" class="player-btn volume-btn" aria-label="Mute">
+                        <i class="fas fa-volume-up" id="volume-icon"></i>
+                    </button>
+                    <input type="range" id="volume-slider" class="volume-slider" value="80" min="0" max="100" aria-label="Volume">
+                </div>
+                
+                <a href="#" id="buy-btn" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-shopping-cart"></i>
+                    Buy
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
